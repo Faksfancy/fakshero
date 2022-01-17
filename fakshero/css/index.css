@@ -46,6 +46,7 @@ a {
 }
 .link--primary {
     color: var(--color-primary);
+    transition: color 0.3s;
 }
 .link--primary:hover {
     color: #008ca9;
@@ -55,4 +56,54 @@ a {
 }
 .link--accent {
     color: var(--color-accent);
+}
+
+/* list */
+.list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* icon */
+.icon {
+    width: 25px;
+    height: 25px;
+}
+.icon--big {
+    width: 40px;
+    height: 40px;
+}
+.icon--small {
+    width: 30px;
+    height: 35px;
+}
+
+.icon-container {    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 3px;
+    
+}
+.icon--big-container {
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.3s;
+}
+
+.icon--big-container:hover {
+    opacity: 0.8;
+}
+
+.icon--small-container {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+}
+.icon--small-container:hover {
+    background-color: var(--color-accent);
+    transform: scale(1.2);
 }
