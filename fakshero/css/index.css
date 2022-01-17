@@ -1,0 +1,58 @@
+:root {
+    --color-primary: #000000;
+    --color-secondary: #008ca9;
+    --color-accent: #f1c34e;
+    --color-body: #918ca4;
+}
+
+/* topograghy */
+html {
+    font-size: 62.5%;
+}
+body {
+    color: var(--color-body);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    margin-top: 0;
+}
+
+/* links */
+
+a {
+    cursor: pointer;
+}
+.link-none {
+    text-decoration: none;
+}
+.link--primary {
+    color: var(--color-primary);
+}
+.link--primary:hover {
+    color: #008ca9;
+}
+.link--secondary {
+    color: var(--color-secondary);
+}
+.link--accent {
+    color: var(--color-accent);
+}
