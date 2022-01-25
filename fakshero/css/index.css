@@ -50,7 +50,7 @@ a {
     color: var(--color-primary);
     transition: color 0.3s;
 }
-.link--primary:hover {
+/* .link--primary:hover { */
     color: #008ca9;
 }
 .link--secondary {
@@ -392,22 +392,73 @@ a {
     
 }
 @media screen and (min-width: 641px) and (max-width: 1024px) {
-        .boxA {
-            flex-grow: 1;
-        }
+        .boxA,
         .boxB {
             flex-grow: 1;
         }
 }
 @media screen and (min-width: 1025px) {
-    .boxA {
-        flex-grow: 1;
-    }
-    .boxB {
-        flex-grow: 1;
-    }
+    .boxA,
+    .boxB,
     .boxC {
         flex-grow: 1;
     }
-    
+}
+
+/* card */
+
+.card {
+    width: 100%;
+    padding: 2.0rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    height: min-content;
+    transition: all 0.3s;
+}
+.card:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+}
+.card:hover .card__link{
+    color: #008ca9;
+}
+
+.card__image {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+
+}
+.card__heading {
+    color: var(--color-primary);
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card__bodytext {
+    line-height: 1.8;
+    font-size: 1.35rem;
+    margin-bottom: 3rem;
+}
+.card__link {
+    font-weight: bold;
+}
+
+.cardbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .cardbox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1025px) {
+    .cardbox {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
