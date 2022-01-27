@@ -120,7 +120,7 @@ a {
     border-radius: 0.2rem;
 }
 .btn--large {
-    padding: 2rem 4.5rem;
+    padding: 1.6rem 4.5rem;
     border-radius: 0.2rem;
 }
 .btn--stretched {
@@ -169,9 +169,10 @@ a {
     display: flex;
     flex-direction: row;
     border-radius: 0.5rem;
+    background: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
     .input {
         width: 18rem;
     }
@@ -580,6 +581,7 @@ a {
     .block--dark h2,
     .block--dark h3 {
         color: #fff;
+        font-weight: 600;
     }
 
    .container {
@@ -621,6 +623,7 @@ a {
 .block-nav {
     padding: 0.5rem 1.6rem 0.5rem 0;
 }
+
 @media screen and (max-width: 1024px) {
     .btn__nav {
         display: none;
@@ -635,3 +638,43 @@ a {
     }
 }
 
+/* block-track */
+
+.track {
+    background: url(/fakshero/images/picture/bg.jpg);
+    background-size: cover;
+}
+.track__textbody {
+    margin: 1rem 0 2.5rem 0;
+}
+.block-track {
+    padding: 2.5rem 1.6rem;
+}
+.block-track h3 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+.block-track h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.span--track {
+    width: 30rem; 
+    display: block; 
+    margin: 3rem 0 4rem 0;  
+}
+.track .btn {
+    font-size: 1.8rem;
+}
+@media screen and (min-width: 768px) {
+    .block-track {
+        padding: 4.5rem 1.6rem 4.5rem 1.6rem;
+    }
+    .track__textbody {
+        margin: 6rem 0 8.5rem 0;
+    }
+    .span--track__small {
+        width: 45rem;
+    }
+}
