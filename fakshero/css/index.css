@@ -67,6 +67,7 @@ a {
 .icon {
     width: 25px;
     height: 25px;
+    margin: 2px;
 }
 .icon--big {
     width: 40px;
@@ -88,13 +89,13 @@ a {
     
 }
 .icon--big-container {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     transition: opacity 0.3s;
 }
 
 .icon--big-container:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .icon--small-container {
@@ -683,5 +684,51 @@ a {
     .block-track h1 {
         font-size: 4rem;
         font-weight: 500;
+    }
+}
+
+/* block-icon */
+.block-icon {
+    background: rgb(250, 241, 243);
+}
+.block-icon p {
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--color-primary);
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.scroll__content img {
+    width: 50px;
+    height: 50px;
+}
+.scroll__content {
+    display: flex;
+    width: 17rem;
+    height: 8rem;
+}
+.scroll__content h3 {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+.scroll {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0 2rem 0;
+}
+@media screen and (max-width: 640px) {
+    .icon-none {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .scroll {
+        display: none;
     }
 }
