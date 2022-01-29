@@ -808,3 +808,8 @@ a {
         margin-bottom: 6rem;
     }  
 }
+
+/* block-question */
+.question__content .collapsible:last-child {
+    border: 0;
+}
