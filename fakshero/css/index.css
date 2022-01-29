@@ -387,6 +387,7 @@ a {
 .showcase {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3rem;
 }
 
 @media screen and (max-width: 640px) {
@@ -401,6 +402,7 @@ a {
         .boxB {
             flex-grow: 1;
         }
+
 }
 @media screen and (min-width: 1025px) {
     .boxA,
@@ -524,7 +526,11 @@ a {
     color: var(--color-primary);
 }
 /* ship */
-
+.ship {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .ship__image {
     margin-right: 1.5rem;
 }
@@ -559,6 +565,7 @@ a {
     border-radius: 10px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+    background: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -731,4 +738,53 @@ a {
     .scroll {
         display: none;
     }
+}
+
+/* block-ship */
+
+.block-ship {
+    background: rgb(250, 241, 243);
+}
+
+.h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: 2px;
+    width: 75%;
+    line-height: 1.5;
+}
+.ship__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5rem;
+    margin-top: 5rem;
+}
+.block-ship__image {
+    width: 100%;
+    display: none;
+    margin-top: 3rem;
+    height: min-content;
+}
+
+@media screen and (min-width: 768px) {
+    .h1 {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .ship__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .block-ship__image {
+        display: block;
+    }
+    .ship__grid {
+        margin-bottom: 3rem;
+    }
+}
+
+/* block-showcase */
+.block-showcase {
+    background: var(--color-accent);
 }
