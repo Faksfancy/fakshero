@@ -432,6 +432,7 @@ a {
     overflow: hidden;
     height: min-content;
     transition: all 0.3s;
+    background: #fff;
 }
 .card:hover {
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
@@ -467,6 +468,8 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1024px) {
@@ -813,3 +816,57 @@ a {
 .question__content .collapsible:last-child {
     border: 0;
 }
+
+/* block-cardbox */
+.cardbox__h1 {
+    color: var(--color-primary);
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.block-cardbox {
+    background: var(--color-accent);
+}
+.cardbox__link {
+    display: inline;
+}
+.cardbox__link:hover {
+    text-decoration: underline;
+    color: #51a6c2;
+}
+.cardbox__link-container {
+    margin-top: 2rem;
+}
+.cardbox__flex  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hidden {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+@media screen and (min-width: 641px) {
+    .hidden {
+        display: inline-block;
+    }
+    .block-cardbox__heading {
+        flex-grow: 1;
+    }
+    .visible {
+        display: none;
+    }
+}
+@media screen and (min-width: 1045px) {
+    .header-container {
+        width: 1045px;
+        margin: 0 auto;
+    }
+}
+
