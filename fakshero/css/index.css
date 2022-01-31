@@ -371,6 +371,7 @@ a {
 .price {
     padding: 2.5rem;
     border-radius: 10px;
+    background: #fff;
 }
 
 /* showcase */
@@ -863,4 +864,125 @@ a {
     }
 }
 
+/* block-price */
 
+.block-price {
+    background: #044c5a;
+}
+.block-price__header h3 {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-top: 0;    
+}
+.block-price__header {
+    max-width: 40rem;
+}
+.block-price .flex {
+    flex-direction: column;
+    gap: 3rem;
+}
+.block-price__header h1 {
+    color: #fff;
+    font-size: 3rem;
+    max-width: 30rem;
+}
+.block-price__footer h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.block-price__footer p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+.block-price__footer a {
+    color: var(--color-accent);
+    margin-left: 2rem;
+}
+.unseen {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .block-price .flex {
+        flex-direction: row;
+    }
+    .unseen {
+        display: block;
+    }
+    .seen {
+        display: none;
+    }
+    .price {
+        width: 50rem;
+    }
+    .block-price__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .block-price__header h1 {
+        margin-top: 0;
+    }
+    .block-price .flex {
+        gap: 0;
+        margin-top: 0;
+    }
+    .block-price__footer p {
+        margin-bottom: 5rem;
+    }
+    .block-price .block {
+        padding: 8rem 1.6rem;
+    }
+}
+
+/* block-collapsible */
+
+.block-collapsible {
+    background: rgb(139, 108, 108);
+}
+.block-collapsible__image {
+    width: 3orem;
+}
+.block-collapsible p {
+    max-width: 30rem;
+    line-height: 1.5;
+    color: var(--color-primary);
+}
+.block-collapsible .collapsible__header {
+    padding: 1.5rem 0;
+    justify-content: space-between;
+}
+.block-collapsible .collapsible {
+    border-bottom: 0;
+}
+.collapsible__list {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+.collapsible__list li {
+    margin-bottom: 2rem;
+}
+.collapsible__list a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+.collapsible__list a:hover {
+    color: var(--color-secondary);
+}
+
+.block-collapsible .flex {
+    flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+    .block-collapsible .flex {
+        flex-direction: row;
+    }
+    .block-collapsible .collapsible__chevron {
+        display: none;
+    }
+    .block-collapsible .collapsible__content {
+        display: inline-block;
+    }
+}
