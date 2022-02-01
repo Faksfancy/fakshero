@@ -986,3 +986,51 @@ a {
         display: inline-block;
     }
 }
+
+/* block-currency */
+.block-currency__icon {
+    justify-content: space-around;
+}
+.block-currency h3 {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+.block-currency h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--color-primary);
+}
+.block-currency span {
+    display: flex;
+}
+.block-currency .collapsible__chevron {
+    position: relative;
+    top: 15px;
+    margin-left: 5px;
+}
+.block-currency__flex {
+    display: flex;
+    flex-direction: column;
+}
+.block-currency__block {
+    padding: 0 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+    
+    .block-currency__header {
+        order: 2;
+    }
+    .block-currency__flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block-currency__icon {
+        width: 100%;
+        max-width: 40rem;
+        justify-content: space-between;
+    }
+    .block-currency h3 {
+        margin-right: 1rem;
+    }
+    
+}
