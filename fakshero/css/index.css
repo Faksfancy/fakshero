@@ -1032,5 +1032,56 @@ a {
     .block-currency h3 {
         margin-right: 1rem;
     }
+    .block-currency__block {
+        padding: 0 0.3rem;
+    }
     
+}
+/* footer */
+
+.sectiona {
+    padding: 2.5rem 0;
+    justify-content: space-around;
+    width: 100%;
+}
+.sectiona a, .footer__flex p, .footer__hidden a {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    transition: opacity 0.3s;
+}
+.sectiona a:hover, .footer__hidden a:hover {
+    opacity: 0.7;
+}
+.footer__div {
+    display: flex;
+    margin: 3rem 0;
+    width: 100%;
+}
+.footer__flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.footer {
+    border-top: 1px solid rgb(202, 195, 195, 0.4);
+    width: 100%;
+}
+.footer__hidden {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .footer__flex p {
+        margin: 0;
+    }
+    .footer__flex {
+        justify-content: flex-start;
+    }
+    .footer__hidden {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        width: 100%;
+        max-width: 20rem;
+        justify-content: space-between;
+    }
 }
