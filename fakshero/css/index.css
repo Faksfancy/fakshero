@@ -941,6 +941,9 @@ a {
 .block-collapsible {
     background: rgb(139, 108, 108);
 }
+.block-collapsible .flex {
+    margin-top: 0;
+}
 .block-collapsible__image {
     width: 3orem;
 }
@@ -1085,3 +1088,8 @@ a {
         justify-content: space-between;
     }
 }
+/* animation */
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+    animation-iteration-count: infinite;
+  }
