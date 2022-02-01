@@ -330,6 +330,7 @@ a {
     border-radius: 50%;
     margin-right: 1.5rem;
     padding: 0.4rem;
+    display: block;
     transition: border-color 0.3s;
 }
 .weight__radio:hover {
@@ -614,12 +615,12 @@ a {
 
 /*navigation*/
 .nav {
-    background: lightgray;
+    background: rgb(139, 108, 108);
 }
 .navigation {
     display: flex;
     justify-content: space-between;
-    background: lightgray;
+    background: rgb(139, 108, 108);
     align-items: center;
 }
 
@@ -944,9 +945,6 @@ a {
 .block-collapsible .flex {
     margin-top: 0;
 }
-.block-collapsible__image {
-    width: 3orem;
-}
 .block-collapsible p {
     max-width: 30rem;
     line-height: 1.5;
@@ -988,6 +986,9 @@ a {
     .block-collapsible .collapsible__content {
         display: inline-block;
     }
+    .collapsible__list {
+        padding-left: 0;
+    }
 }
 
 /* block-currency */
@@ -1003,7 +1004,7 @@ a {
     font-weight: normal;
     color: var(--color-primary);
 }
-.block-currency span {
+.block-currency article {
     display: flex;
 }
 .block-currency .collapsible__chevron {
